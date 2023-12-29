@@ -8,7 +8,7 @@ import {
 } from './ContactForm.styled';
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
+import { addContact } from 'components/redux/contactsSlice';
 
 const ContactFormSchema = Yup.object().shape({
   name: Yup.string()

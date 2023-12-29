@@ -1,16 +1,28 @@
+import { ContactForm } from './ContactForm/ContactForm';
+import { ContactList } from './ContactList/ContactList';
+import { ContactFilter } from './ContactFilter/ContactFilter';
+import { StyledSection, SectionTitle, ContactsTitle } from './Section.styled';
+import { GlobalStyle } from './Globalstyle';
+import { Container } from './Container';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <StyledSection>
+        <Container>
+          <SectionTitle>Phonebook</SectionTitle>
+          <ContactForm />
+        </Container>
+      </StyledSection>
+
+      <StyledSection>
+        <Container>
+          <ContactsTitle>Contacts</ContactsTitle>
+          <ContactFilter />
+          <ContactList />
+        </Container>
+      </StyledSection>
+      <GlobalStyle />
+    </>
   );
 };
