@@ -1,5 +1,5 @@
 import { ContactListItem } from 'components/ContactListItem/ContactListItem';
-import { StyledNotification } from 'components/Notification.styled';
+import { StyledNotification } from 'components/styles/Notification.styled';
 import { useSelector } from 'react-redux';
 import { ContactsList, ContactsListItem } from './ContactList.styled';
 
